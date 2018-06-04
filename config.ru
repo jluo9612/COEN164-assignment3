@@ -1,2 +1,2 @@
-require './assign3'
+require './main'
 run Sinatra::Application
