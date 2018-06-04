@@ -1,2 +1,2 @@
-require './assign3.rb'
+require './assign3'
 run Sinatra::Application
