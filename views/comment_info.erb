@@ -1,0 +1,12 @@
+<h2> Comment Information </h2>
+
+<p>Commenter Name: <%= @comments.name %></p>
+<p>Created At: <%= @comments.created_at%> </p>
+<p>Comment: <%=@comments.value %></p>
+
+<p><a href="/comments">Back to Comment Directory</a></p>
+
+<form action="/comments/<%= @comments.id %>" method="POST">
+  <input type="hidden" name="_method" value="DELETE"/>
+  <input type="submit" value="Delete this comment"/>
+</form>

@@ -1,0 +1,46 @@
+html {background-color: #ccc;}
+body {
+  width:80%;
+  height:90%;
+  background-color:#dddcd9;
+  margin:2em auto 2em;
+  padding:25px;
+  position:relative;
+  font-family: sans-serif;
+}
+
+h1{
+  color:red;
+  font-size:4vw;
+}
+
+img{
+  padding-right: 10px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    width:100%;
+}
+
+/* Style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+label {
+  display:block;
+}

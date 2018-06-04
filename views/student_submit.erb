@@ -1,0 +1,23 @@
+<% if @students%>
+<label for="firstName"> First Name:</label>
+<input id="firstName" type="text" name="students[firstName]" value= "<%= @students.firstName%>" required/>
+<br>
+<label for="lastName"> Last Name:</label>
+<input id="lastName" type="text" name="students[lastName]" value= "<%= @students.lastName%>" required/>
+<br>
+<label for="birthday"> Birthday(mm/dd/yyyy): </label>
+<input id="birthday" type="date" name="students[birthday]"
+  value="<%= @students.birthday.strftime('%m/%d/%Y') if @students.birthday%>" required/>
+<br>
+<label for="id"> Student ID Number:</label>
+<input id='id' type="number" name="students[id]" value="<%= @students.id %>"
+  required/>
+<br>
+<label for="address"> Address: </label>
+<input id ="address" name="students[address]" value="<%= @students.address%>"
+  required/>
+<br>
+<input type="submit" value="Save Student"/>
+<%else%>
+<p>This student does not exist!<p>
+<%end%>

@@ -1,0 +1,12 @@
+<h2>Add a new comment</h2>
+<form method="POST" action="/comments">
+  <% if @comments %>
+  <label for="value"> Comment Value:</label>
+  <input id="value" type="text" name="comments[value]" required/>
+  <br>
+  <label for="name">Name:</label>
+  <input id="name" type="text" name="comments[name]"/>
+  <br>
+  <input type="submit" value="Save comment"/>
+  <% end %>
+</form>
